@@ -1,0 +1,21 @@
+{
+  "name": "zoomin.tv",
+  "version": "2.0.6",
+  "description": "Next generation TV, welcome to the world of Zoomin.TV",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phonegap/phonegap-app-hello-world.git"
+  },
+  "author": "PhoneGap Team",
+  "license": "Apache-2.0.0",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "bugs": {
+    "url": "https://github.com/phonegap/phonegap-app-hello-world/issues"
+  },
+  "homepage": "https://github.com/phonegap/phonegap-app-hello-world"
+}
