@@ -16,6 +16,40 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+ function initPushwoosh() {
+   console.log("init puusssh!")
+   var pushwoosh = cordova.require("pushwoosh-cordova-plugin.PushNotification");
+
+   // Should be called before pushwoosh.onDeviceReady
+   document.addEventListener('push-notification', function(event) {
+     var notification = event.notification;
+     // handle push open here
+     console.log("has notification", event)
+   });
+
+   // Initialize Pushwoosh. This will trigger all pending push notifications on start.
+   pushwoosh.onDeviceReady({
+     appid: "EFE85-B7D2B",
+     projectid: "909405246969",    // android only, note thisis project number, not id!
+     serviceName: "MPNS_SERVICE_NAME" // windows only
+   });
+
+   pushwoosh.registerDevice(
+     function(status) {
+       var pushToken = status.pushToken;
+         // handle successful registration here
+         console.log("has status", status)
+         console.log("has token", pushtoken)
+     },
+     function(status) {
+       // handle registration error here
+         console.log("has token", status)
+     }
+   );
+ }
+
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -26,7 +60,15 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+      // should be called before pushwoosh.onDeviceReady
+      document.addEventListener('push-notification', function(event) {
+        var notification = event.notification;
+        // handle push open here
+        console.log("push has received etwas")
+        // alert("you have received a push event and opens")
+      });
+
+      document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
@@ -34,7 +76,10 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        console.log('now, init push')
+        initPushwoosh();
     },
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
