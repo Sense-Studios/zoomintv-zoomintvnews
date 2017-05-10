@@ -44,7 +44,7 @@
      },
      function(status) {
        // handle registration error here
-         console.log("has token", status)
+       console.log("has token", status)
      }
    );
  }
