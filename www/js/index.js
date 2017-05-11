@@ -26,6 +26,27 @@
      var notification = event.notification;
      // handle push open here
      console.log("has notification", event)
+     console.log("has link, switch dirty", event.notification.userdata.url)
+
+     // FIXME: TODO: consolodate this
+     var url = event.notification.userdata.url
+     console.log("load: ", event.notification.userdata.url)
+     $.ajax({
+         url: url,
+         type: 'GET',
+         complete: function(e, xhr, settings){
+           console.log('complete:', e, xhr, settings)
+            if(e.status === 200){
+               console.log("go! go! go!")
+               document.getElementById("content_frame").src = url;
+               document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
+               document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
+            }else{
+               $('#could_not_connect').fadeIn('slow')
+            }
+         }
+     });
+
    });
 
    // Initialize Pushwoosh. This will trigger all pending push notifications on start.
