@@ -18,7 +18,8 @@
         Zoomin.TV
     </author>
 
-	  <content src="http://zoomin.tv/video/?source=ios" />
+	  <!-- <content src="http://zoomin.tv/video/?source=ios" /> -->
+    <content src="index.html" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>403</string>
