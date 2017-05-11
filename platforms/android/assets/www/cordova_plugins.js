@@ -1,9 +1,34 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
-module.exports = [];
+module.exports = [
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
+    },
+    {
+        "file": "plugins/pushwoosh-cordova-plugin/www/PushNotification.js",
+        "id": "pushwoosh-cordova-plugin.PushNotification",
+        "clobbers": [
+            "plugins.pushNotification"
+        ]
+    }
+];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-plugin-splashscreen": "4.0.3",
+    "cordova-plugin-statusbar": "2.2.3",
+    "pushwoosh-cordova-plugin": "6.5.2"
 };
 // BOTTOM OF METADATA
 });

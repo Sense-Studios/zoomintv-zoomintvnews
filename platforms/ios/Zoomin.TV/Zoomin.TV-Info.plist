@@ -39,5 +39,9 @@
       <key>NSAllowsArbitraryLoads</key>
       <true/>
     </dict>
+    <key>Pushwoosh_LOG_LEVEL</key>
+    <string>DEBUG</string>
+    <key>Pushwoosh_ALERT_TYPE</key>
+    <string>NONE</string>
   </dict>
 </plist>

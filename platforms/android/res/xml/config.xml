@@ -5,6 +5,17 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="android-package" onload="true" value="com.pushwoosh.plugin.pushnotifications.PushNotifications" />
+    </feature>
     <allow-intent href="market:*" />
     <name>Zoomin.TV</name>
     <description>
@@ -13,7 +24,7 @@
     <author email="support@zoomin.tv" href="http://zoomin.tv">
         Zoomin.TV
     </author>
-    <content src="http://zoomin.tv/video/?source=ios" />
+    <content src="index.html" />
     <gap:config-file parent="CFBundleShortVersionString" platform="ios">
         <string>403</string>
     </gap:config-file>

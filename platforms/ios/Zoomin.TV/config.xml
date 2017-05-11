@@ -15,6 +15,17 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="ios-package" value="PushNotification" />
+    </feature>
     <name>Zoomin.TV</name>
     <description>
          Next generation TV, welcome to the world of Zoomin.TV
@@ -22,7 +33,7 @@
     <author email="support@zoomin.tv" href="http://zoomin.tv">
         Zoomin.TV
     </author>
-    <content src="http://zoomin.tv/video/?source=ios" />
+    <content src="index.html" />
     <gap:config-file parent="CFBundleShortVersionString" platform="ios">
         <string>403</string>
     </gap:config-file>
@@ -85,6 +96,8 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />

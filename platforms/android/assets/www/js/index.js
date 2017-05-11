@@ -76,6 +76,25 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        var url = "http://zoomin.tv/video/?source=ios"
+        console.log("load: ", url)
+        $.ajax({
+            url: url,
+            type: 'GET',
+            complete: function(e, xhr, settings){
+              console.log('complete:', e, xhr, settings)
+               if(e.status === 200){
+                  console.log("go! go! go!")
+                  document.getElementById("content_frame").src = url;
+                  document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
+                  document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
+               }else{
+                  $('#could_not_connect').fadeIn('slow')
+               }
+            }
+        });
+
         console.log('now, init push')
         initPushwoosh();
     },
