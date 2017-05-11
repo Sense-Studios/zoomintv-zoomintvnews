@@ -74,6 +74,13 @@ body {
   */
 }
 
+#content_frame {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
