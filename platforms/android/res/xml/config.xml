@@ -81,6 +81,12 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:platform name="ios" />
     <gap:platform name="android" />
+    <allow-navigation href="http://zoomin.tv/*" />
+    <allow-navigation href="http://zoomin.tv/video/*" />
+    <allow-navigation href="*://*.zoomin.tv/*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
     <allow-navigation href="*" />
     <access origin="*.pushwoosh.com" />
     <access origin="*" />
