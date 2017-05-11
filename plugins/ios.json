@@ -9,6 +9,18 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
+        },
+        "pushwoosh-cordova-plugin": {
+            "LOG_LEVEL": "DEBUG",
+            "IOS_FOREGROUND_ALERT_TYPE": "NONE",
+            "ANDROID_FOREGROUND_PUSH": "false",
+            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },
     "dependent_plugins": {}

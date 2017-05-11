@@ -30,7 +30,7 @@
 
    // Initialize Pushwoosh. This will trigger all pending push notifications on start.
    pushwoosh.onDeviceReady({
-     appid: "F99FE-C376A",
+     appid: "22245-224A7",
      projectid: "640476839621",       // android only, note thisis project number, not id!
      serviceName: "MPNS_SERVICE_NAME" // windows only
    });
