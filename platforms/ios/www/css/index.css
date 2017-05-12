@@ -42,7 +42,12 @@ body {
     margin:0px;
     padding:0px;
     text-transform:uppercase;
+    
     width:100%;
+    overflow:hidden;
+    background-image: url('../img/bgr.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .could_not_connect {
