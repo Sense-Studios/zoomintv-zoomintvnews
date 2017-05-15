@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="21" id="tv.zoomin.zoomintv2" version="2.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget android-versionCode="22" id="tv.zoomin.zoomintv2" version="2.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
@@ -37,7 +37,7 @@
     </author>
     <content src="index.html" />
     <gap:config-file parent="CFBundleShortVersionString" platform="ios">
-        <string>403</string>
+        <string>404</string>
     </gap:config-file>
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
@@ -51,7 +51,6 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="SplashScreen" value="screen" />
