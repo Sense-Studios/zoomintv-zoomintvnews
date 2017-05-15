@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"PushNotification\"><param name=\"android-package\" onload=\"true\" value=\"com.pushwoosh.plugin.pushnotifications.PushNotifications\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -170,6 +174,9 @@
             "IOS_FOREGROUND_ALERT_TYPE": "NONE",
             "ANDROID_FOREGROUND_PUSH": "false",
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },
     "dependent_plugins": {},
@@ -194,12 +201,21 @@
             "clobbers": [
                 "plugins.pushNotification"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.2",
         "cordova-plugin-splashscreen": "4.0.3",
         "cordova-plugin-statusbar": "2.2.3",
-        "pushwoosh-cordova-plugin": "6.5.2"
+        "pushwoosh-cordova-plugin": "6.5.2",
+        "cordova-plugin-inappbrowser": "1.7.1"
     }
 }

@@ -25,6 +25,7 @@
 		9B56E1CD36DD4380B56EF48A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2AAEDD3D0742B19A5A95CF /* CoreLocation.framework */; };
 		3837F7680BA94F10A970968C /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0D1881FDDA45BBAED5C55D /* libstdc++.dylib */; };
 		599B01B8F60C4BAD9ACFE5BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D801EB8FFF504F38A6C81BAB /* libz.dylib */; };
+		556417FB1CAB451896B50964 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DE65995238460CA0EB0613 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		DB2AAEDD3D0742B19A5A95CF /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		BC0D1881FDDA45BBAED5C55D /* libstdc++.dylib */ = {isa = PBXFileReference; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 		D801EB8FFF504F38A6C81BAB /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		49DE65995238460CA0EB0613 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		EC39388A72804190AD25F7E9 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +207,8 @@
 				3675FDB9EE464C389D963EEF /* PushNotification.h */,
 				73C8D4AC8DBE44519BC77C29 /* PushNotificationManager.h */,
 				2BBD7DC311B549838FBCB973 /* PWLog.h */,
+				49DE65995238460CA0EB0613 /* CDVInAppBrowser.m */,
+				EC39388A72804190AD25F7E9 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "Zoomin.TV/Plugins";
@@ -322,6 +327,7 @@
 				8FDACE8BA02046D98CF42B74 /* CDVViewController+SplashScreen.m in Sources */,
 				0221E15C1866476599EEEA43 /* CDVStatusBar.m in Sources */,
 				A45D18A2232D47D287BEF19D /* PushNotification.m in Sources */,
+				556417FB1CAB451896B50964 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

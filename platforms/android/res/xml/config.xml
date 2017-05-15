@@ -16,6 +16,9 @@
     <feature name="PushNotification">
         <param name="android-package" onload="true" value="com.pushwoosh.plugin.pushnotifications.PushNotifications" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/icon-48-mdpi.png" />
     <icon gap:platform="android" gap:qualifier="hdpi" src="www/res/icon/android/icon-72-hdpi.png" />
@@ -55,8 +58,7 @@
     <preference name="SplashScreenDelay" value="3" />
     <icon src="www/icon.png" />
     <splash height="1136" src="www/splash.png" width="640" />
-    <gap:platform name="ios" />
-    <gap:platform name="android" />
+    <access origin="*" />
     <allow-navigation href="http://zoomin.tv/*" />
     <allow-navigation href="http://zoomin.tv/video/*" />
     <allow-navigation href="*://*.zoomin.tv/*" />
@@ -64,8 +66,6 @@
     <allow-navigation href="https://*/*" />
     <allow-navigation href="data:*" />
     <allow-navigation href="*" />
-    <access origin="*.pushwoosh.com" />
-    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

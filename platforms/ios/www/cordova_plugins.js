@@ -23,6 +23,15 @@ module.exports = [
         "clobbers": [
             "plugins.pushNotification"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -31,7 +40,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-statusbar": "2.2.3",
-    "pushwoosh-cordova-plugin": "6.5.2"
+    "pushwoosh-cordova-plugin": "6.5.2",
+    "cordova-plugin-inappbrowser": "1.7.1"
 }
 // BOTTOM OF METADATA
 });
