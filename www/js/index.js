@@ -40,7 +40,7 @@
            console.log('complete:', e, xhr, settings)
             if(e.status === 200){
                console.log("go! go! go!")
-               document.getElementById("content_frame").src = url;
+               document.getElementById("app_content_frame").src = url;
                document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
                document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
             }else{
@@ -109,7 +109,7 @@ var app = {
               console.log('complete:', e, xhr, settings)
                if(e.status === 200){
                   console.log("go! go! go!")
-                  document.getElementById("content_frame").src = url;
+                  document.getElementById("app_content_frame").src = url;
                   document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
                   document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
                }else{
