@@ -17,6 +17,8 @@
  * under the License.
  */
 
+ var homeTimeout
+
  function initPushwoosh() {
    console.log("init puusssh!")
    var pushwoosh = cordova.require("pushwoosh-cordova-plugin.PushNotification");
@@ -40,9 +42,11 @@
            console.log('complete:', e, xhr, settings)
             if(e.status === 200){
                console.log("go! go! go!")
-               document.getElementById("app_content_frame").src = url;
-               document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
-               document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
+               //document.getElementById("app_content_frame").src = url;
+               //document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
+               //document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
+               clearTimeOut(homeTimeout) 
+               window.open(url)
             }else{
                $('#could_not_connect').fadeIn('slow')
             }
@@ -109,9 +113,7 @@ var app = {
               console.log('complete:', e, xhr, settings)
                if(e.status === 200){
                   console.log("go! go! go!")
-                  document.getElementById("app_content_frame").src = url;
-                  document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
-                  document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
+                  homeTimeout = setTimeout( function() { window.open(url) }, 600 )
                }else{
                   $('#could_not_connect').fadeIn('slow')
                }
