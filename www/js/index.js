@@ -27,9 +27,11 @@
      // handle push open here
      console.log("has notification", event)
      console.log("has link, switch dirty", event.notification.userdata.url)
+     
+     var url = "http://zoomin.tv/video/?source=ios#" + event.notification.userdata.hash
 
      // FIXME: TODO: consolodate this
-     var url = event.notification.userdata.url
+     // var url = event.notification.userdata.url
      console.log("load: ", event.notification.userdata.url)
      $.ajax({
          url: url,
