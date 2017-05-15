@@ -27,7 +27,7 @@
      // handle push open here
      console.log("has notification", event)
      console.log("has link, switch dirty", event.notification.userdata.url)
-     
+
      var url = "http://zoomin.tv/video/?source=ios#" + event.notification.userdata.hash
 
      // FIXME: TODO: consolodate this
