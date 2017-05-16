@@ -17,7 +17,22 @@
  * under the License.
  */
 
- var homeTimeout
+ var waspushed = false
+ function openURL(_url) {
+   $.ajax({
+       url: _url,
+       type: 'GET',
+       complete: function(e, xhr, settings){
+         console.log('complete:', e, xhr, settings)
+          if(e.status === 200){
+             console.log("go! go! go!")
+             window.location.hash = '#' + event.notification.userdata.hash
+          }else{
+             $('#could_not_connect').fadeIn('slow')
+          }
+       }
+   });
+ }
 
  function initPushwoosh() {
    console.log("init puusssh!")
@@ -29,32 +44,9 @@
      // handle push open here
      console.log("has notification", event)
      console.log("has link, switch dirty", event.notification.userdata.url)
-
+     waspushed = true
      var url = "http://zoomin.tv/video/?source=ios#" + event.notification.userdata.hash
-
-     // FIXME: TODO: consolodate this
-     // var url = event.notification.userdata.url
-     console.log("load: ", event.notification.userdata.url)
-     $.ajax({
-         url: url,
-         type: 'GET',
-         complete: function(e, xhr, settings){
-           console.log('complete:', e, xhr, settings)
-            if(e.status === 200){
-               console.log("go! go! go!")
-               //document.getElementById("app_content_frame").src = url;
-               //document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
-               //document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
-               clearTimeOut(homeTimeout)
-               //window.open(url)
-               //window.location.hash = '#' + event.notification.userdata.hash
-
-            }else{
-               $('#could_not_connect').fadeIn('slow')
-            }
-         }
-     });
-
+     openURL( url )
    });
 
    // Initialize Pushwoosh. This will trigger all pending push notifications on start.
@@ -70,10 +62,13 @@
          // handle successful registration here
          console.log("has status", status)
          console.log("has token", pushtoken)
+         if ( !waspushed ) openURL("http://zoomin.tv/video/?source=ios")
      },
      function(status) {
        // handle registration error here
        console.log("has token", status)
+
+       if ( !waspushed ) openURL("http://zoomin.tv/video/?source=ios")
      }
    );
  }
@@ -106,23 +101,6 @@ var app = {
     onDeviceReady: function(e) {
         app.receivedEvent('deviceready')
         console.log("device ready:", e);
-
-        var url = "http://zoomin.tv/video/?source=ios"
-        console.log("load: ", url)
-        $.ajax({
-            url: url,
-            type: 'GET',
-            complete: function(e, xhr, settings){
-              console.log('complete:', e, xhr, settings)
-               if(e.status === 200){
-                  console.log("go! go! go!")
-                  //homeTimeout = setTimeout( function() { window.open(url) }, 600 )
-               }else{
-                  $('#could_not_connect').fadeIn('slow')
-               }
-            }
-        });
-
         console.log('now, init push')
         initPushwoosh();
     },
