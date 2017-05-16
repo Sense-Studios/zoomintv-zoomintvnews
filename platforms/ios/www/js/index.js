@@ -47,7 +47,7 @@
                //document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
                clearTimeOut(homeTimeout)
                //window.open(url)
-               window.location.hash = '#' + event.notification.userdata.hash
+               //window.location.hash = '#' + event.notification.userdata.hash
 
             }else{
                $('#could_not_connect').fadeIn('slow')
@@ -116,7 +116,7 @@ var app = {
               console.log('complete:', e, xhr, settings)
                if(e.status === 200){
                   console.log("go! go! go!")
-                  homeTimeout = setTimeout( function() { window.open(url) }, 600 )
+                  //homeTimeout = setTimeout( function() { window.open(url) }, 600 )
                }else{
                   $('#could_not_connect').fadeIn('slow')
                }
