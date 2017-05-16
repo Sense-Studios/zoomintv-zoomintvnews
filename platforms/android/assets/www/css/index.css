@@ -24,7 +24,9 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#151515;
+    /*-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    /*-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    /*-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -68,6 +70,7 @@ body {
   */
 }
 
+<<<<<<< HEAD
 .iframe_wrapper {
   overflow: hidden;
   width: 100%;
@@ -81,6 +84,17 @@ body {
   width: 100%;
   height: 100%;
   border: none;
+=======
+.app_iframe_wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  height: 100vh;
+>>>>>>> d93b0b39deb2db38176052b9bc1a887b5ab8ee20
+}
+
+#app_content_frame {
+  height:100vw;
+  width:100vw;
 }
 
 
