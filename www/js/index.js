@@ -61,7 +61,7 @@
        var pushToken = status.pushToken;
          // handle successful registration here
          console.log("has status", status)
-         console.log("has token", pushtoken)
+         console.log("has token", pushToken)
          if ( !waspushed ) openURL("http://zoomin.tv/video/?source=ios")
      },
      function(status) {
