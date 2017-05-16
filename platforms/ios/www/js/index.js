@@ -26,7 +26,7 @@
          console.log('complete:', e, xhr, settings)
           if(e.status === 200){
              console.log("go! go! go!")
-             window.location.href = url
+             window.location.href = _url
           }else{
              $('#could_not_connect').fadeIn('slow')
           }
