@@ -26,7 +26,7 @@
          console.log('complete:', e, xhr, settings)
           if(e.status === 200){
              console.log("go! go! go!")
-             window.location.hash = '#' + event.notification.userdata.hash
+             window.location.href = url
           }else{
              $('#could_not_connect').fadeIn('slow')
           }
@@ -43,7 +43,7 @@
      var notification = event.notification;
      // handle push open here
      console.log("has notification", event)
-     console.log("has link, switch dirty", event.notification.userdata.url)
+     console.log("has hash", event.notification.userdata.hash)
      waspushed = true
      var url = "http://zoomin.tv/video/?source=ios#" + event.notification.userdata.hash
      openURL( url )
