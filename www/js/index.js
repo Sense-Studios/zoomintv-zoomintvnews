@@ -45,8 +45,10 @@
                //document.getElementById("app_content_frame").src = url;
                //document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
                //document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
-               clearTimeOut(homeTimeout) 
-               window.open(url)
+               clearTimeOut(homeTimeout)
+               //window.open(url)
+               window.location.hash = '#' + event.notification.userdata.hash
+
             }else{
                $('#could_not_connect').fadeIn('slow')
             }
@@ -101,8 +103,9 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+    onDeviceReady: function(e) {
+        app.receivedEvent('deviceready')
+        console.log("device ready:", e);
 
         var url = "http://zoomin.tv/video/?source=ios"
         console.log("load: ", url)
