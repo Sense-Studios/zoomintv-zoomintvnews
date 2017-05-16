@@ -5,8 +5,13 @@
   xmlns     = "http://www.w3.org/ns/widgets"
   xmlns:gap = "http://phonegap.com/ns/1.0"
   id        = "tv.zoomin.zoomintv2"
-  version   = "2.1.0"
-  android-versionCode="22">
+  version   = "2.1.1"
+  android-versionCode="23">
+
+
+  <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+  <string>405</string>
+  </gap:config-file>
 
     <name>Zoomin.TV</name>
 
@@ -20,10 +25,6 @@
 
 	  <!-- <content src="http://zoomin.tv/video/?source=ios" /> -->
     <content src="index.html" />
-
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>404</string>
-    </gap:config-file>
 
     <!-- plugins -->
     <plugin name="cordova-plugin-whitelist"       source="npm" />
