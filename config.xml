@@ -5,12 +5,12 @@
   xmlns     = "http://www.w3.org/ns/widgets"
   xmlns:gap = "http://phonegap.com/ns/1.0"
   id        = "tv.zoomin.zoomintv2"
-  version   = "2.1.2"
-  android-versionCode="24">
+  version   = "2.1.1"
+  android-versionCode="25">
 
 
   <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-  <string>406</string>
+  <string>407</string>
   </gap:config-file>
 
     <name>Zoomin.TV</name>
