@@ -67,7 +67,6 @@
      function(status) {
        // handle registration error here
        console.log("has token", status)
-
        if ( !waspushed ) openURL("http://zoomin.tv/video/?source=ios")
      }
    );
