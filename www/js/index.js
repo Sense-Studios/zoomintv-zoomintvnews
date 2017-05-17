@@ -101,6 +101,7 @@ var app = {
         app.receivedEvent('deviceready')
         console.log("device ready:", e);
         console.log('now, init push')
+
         initPushwoosh();
     },
 
