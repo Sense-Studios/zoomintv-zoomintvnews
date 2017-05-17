@@ -82,6 +82,9 @@
     <gap:splash gap:platform="ios" height="1080" src="www/res/screen/ios/screen-iphone-landscape-3x.png" width="1920" />
     <gap:splash gap:platform="ios" height="640" src="www/res/screen/ios/screen-iphone-landscape-568h-2x.png" width="1136" />
     <gap:splash gap:platform="ios" height="750" scr="www/res/screen/ios/screen-iphone-landscape-750h-2x.png" width="1334" />
+    <gap:splash gap:platform="ios" height="1334" src="www/res/screen/ios/screen-iphone-667h@2x.png" width="750" />
+    <gap:splash gap:platform="ios" height="1242" src="www/res/screen/ios/screen-iphone-Landscape-736h@3x.png" width="2208" />
+    <gap:splash gap:platform="ios" height="2208" scr="www/res/screen/ios/screen-iphone-Portrait-736h@3x.png" width="1242" />
     <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="2048" src="www/res/screen/ios/screen-ipad-portrait-2x.png" width="1536" />
     <gap:splash gap:platform="ios" height="1536" src="www/res/screen/ios/screen-ipad-landscape-2x.png" width="2048" />
