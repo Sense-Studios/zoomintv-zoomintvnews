@@ -27,6 +27,10 @@
 		3F620B2953794D5D8AE45D9B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3F83D5038D4A4C91C2A40F /* CoreLocation.framework */; };
 		9351D54D640D4AD88BB54781 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA755682BBC4077BE419BD2 /* libstdc++.dylib */; };
 		1AC48BE51450452B83BDE7E3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6597B2E325464168A1A00ED7 /* libz.dylib */; };
+		4F12C2E2EB6C404BB7363A20 /* PGMultiView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF45B1AB700749AAB52CF3C7 /* PGMultiView.m */; };
+		C481A2916D4645B4BEEC9B86 /* WizViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66241756E5584BFABFF1E489 /* WizViewManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F574F87FA9C74CBBA1C088D2 /* WizWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EBA4EA28264A77922AEB0F /* WizWebView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2121C1BFF5E04969B07A5191 /* WizDebugLog.h in Resources */ = {isa = PBXBuildFile; fileRef = 78720FADDCC74EBBA79BA8FF /* WizDebugLog.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,13 @@
 		FF3F83D5038D4A4C91C2A40F /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		EEA755682BBC4077BE419BD2 /* libstdc++.dylib */ = {isa = PBXFileReference; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 		6597B2E325464168A1A00ED7 /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		AF45B1AB700749AAB52CF3C7 /* PGMultiView.m */ = {isa = PBXFileReference; name = "PGMultiView.m"; path = "phonegap-plugin-multiview/PGMultiView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9EC7BF8D115B491BB25E307A /* PGMultiView.h */ = {isa = PBXFileReference; name = "PGMultiView.h"; path = "phonegap-plugin-multiview/PGMultiView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		66241756E5584BFABFF1E489 /* WizViewManager.m */ = {isa = PBXFileReference; name = "WizViewManager.m"; path = "cordova-plugin-wizviewmanager/WizViewManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		42EBA4EA28264A77922AEB0F /* WizWebView.m */ = {isa = PBXFileReference; name = "WizWebView.m"; path = "cordova-plugin-wizviewmanager/WizWebView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		78720FADDCC74EBBA79BA8FF /* WizDebugLog.h */ = {isa = PBXFileReference; name = "WizDebugLog.h"; path = "cordova-plugin-wizviewmanager/WizDebugLog.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		39D3CCD0900E461DA9915265 /* WizViewManager.h */ = {isa = PBXFileReference; name = "WizViewManager.h"; path = "cordova-plugin-wizviewmanager/WizViewManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		60038D3F981E49DAA9D44F9C /* WizWebView.h */ = {isa = PBXFileReference; name = "WizWebView.h"; path = "cordova-plugin-wizviewmanager/WizWebView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +223,13 @@
 				9B36BF7316E8425FBA27618D /* PushNotification.h */,
 				41AADA4692E94F74BE177EEC /* PushNotificationManager.h */,
 				C6A7F1E1E44D4BC7901B1245 /* PWLog.h */,
+				AF45B1AB700749AAB52CF3C7 /* PGMultiView.m */,
+				9EC7BF8D115B491BB25E307A /* PGMultiView.h */,
+				66241756E5584BFABFF1E489 /* WizViewManager.m */,
+				42EBA4EA28264A77922AEB0F /* WizWebView.m */,
+				78720FADDCC74EBBA79BA8FF /* WizDebugLog.h */,
+				39D3CCD0900E461DA9915265 /* WizViewManager.h */,
+				60038D3F981E49DAA9D44F9C /* WizWebView.h */,
 			);
 			name = Plugins;
 			path = "Zoomin.TV/Plugins";
@@ -329,6 +347,10 @@
 				FE33239B7969474CA452A2A7 /* CDVViewController+SplashScreen.m in Sources */,
 				52A2EFB6A64C416894E50981 /* CDVStatusBar.m in Sources */,
 				BF342EC555BB4FB48F806F6E /* PushNotification.m in Sources */,
+				4F12C2E2EB6C404BB7363A20 /* PGMultiView.m in Sources */,
+				C481A2916D4645B4BEEC9B86 /* WizViewManager.m in Sources */,
+				F574F87FA9C74CBBA1C088D2 /* WizWebView.m in Sources */,
+				2121C1BFF5E04969B07A5191 /* WizDebugLog.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

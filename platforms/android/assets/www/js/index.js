@@ -26,7 +26,25 @@
          console.log('complete:', e, xhr, settings)
           if(e.status === 200){
              console.log("go! go! go!")
-             window.location.href = _url
+             // window.location.href = _url
+             // PGMultiView.loadView(_url, "", function(e){console.log("ole!", e)}, function(e){console.log('owdear', e)});
+
+             console.log("create view")
+             wizViewManager.create(
+              "myFirstView",
+              { src: "http://google.com" },
+              function(e) { console.log("succes!", e)},
+              function(e) { console.log("fail!", e)}
+            );
+
+            console.log("load view")
+            wizViewManager.load(
+              "myFirstView",
+              "http://google.com",
+              function(e) { console.log("succes!", e)},
+              function(e) { console.log("fail!", e)}
+            );
+            
           }else{
              $('#could_not_connect').fadeIn('slow')
           }

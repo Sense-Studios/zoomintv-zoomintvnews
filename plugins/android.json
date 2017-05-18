@@ -24,6 +24,12 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
+        },
+        "phonegap-plugin-multiview": {
+            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
+        },
+        "cordova-plugin-wizviewmanager": {
+            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },
     "dependent_plugins": {}

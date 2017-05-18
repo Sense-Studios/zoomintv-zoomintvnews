@@ -38,5 +38,21 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "phonegap-plugin-multiview": {
+        "source": {
+            "type": "registry",
+            "id": "phonegap-plugin-multiview"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-wizviewmanager": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-wizviewmanager"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

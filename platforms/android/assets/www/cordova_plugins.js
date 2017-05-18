@@ -28,6 +28,27 @@ module.exports = [
             "cordova.InAppBrowser.open",
             "window.open"
         ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-multiview/www/multiview.js",
+        "id": "phonegap-plugin-multiview.multiview",
+        "clobbers": [
+            "PGMultiView"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-wizviewmanager/www/wizViewManager.js",
+        "id": "cordova-plugin-wizviewmanager.WizViewManager",
+        "clobbers": [
+            "window.wizViewManager"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-wizviewmanager/www/wizViewMessenger.js",
+        "id": "cordova-plugin-wizviewmanager.WizViewMessenger",
+        "clobbers": [
+            "window.wizViewMessenger"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -37,7 +58,9 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-statusbar": "2.2.3",
     "pushwoosh-cordova-plugin": "6.5.2",
-    "cordova-plugin-inappbrowser": "1.7.1"
+    "cordova-plugin-inappbrowser": "1.7.1",
+    "phonegap-plugin-multiview": "0.0.1",
+    "cordova-plugin-wizviewmanager": "1.4.0"
 };
 // BOTTOM OF METADATA
 });
