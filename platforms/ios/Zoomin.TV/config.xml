@@ -119,5 +119,5 @@
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3" />
+    <preference name="SplashScreenDelay" value="3000" />
 </widget>

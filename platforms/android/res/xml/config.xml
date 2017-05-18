@@ -54,7 +54,7 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3" />
+    <preference name="SplashScreenDelay" value="3000" />
     <icon src="www/icon.png" />
     <splash height="1136" src="www/splash.png" width="640" />
     <access origin="*" />
