@@ -42,7 +42,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.3",
     "cordova-plugin-whitelist": "1.2.2",
     "pushwoosh-cordova-plugin": "6.5.2",
-    "injectview": "1.0.2"
+    "cordova-plugin-remote-injection": "0.5.2"
 };
 // BOTTOM OF METADATA
 });

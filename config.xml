@@ -32,7 +32,7 @@
     <plugin name="cordova-plugin-inappbrowser"    source="npm" />
     <plugin name="cordova-plugin-statusbar"       source="npm" />
     <plugin name="pushwoosh-cordova-plugin"       source="npm" />
-    <plugin name="injectview" spec="https://github.com/sberan/cordova-plugin-injectview.git" />
+    <plugin name="cordova-plugin-remote-injection" spec="~0.5.2" />
     <!-- <plugin name="cordova-plugin-wizviewmanager"  source="npm" /> -->
     <!-- <plugin name="cordova-plugin-fastrde-injectview"   source="npm" /> -->
 
@@ -65,6 +65,11 @@
     <preference name="AllowInlineMediaPlayback"   value="true" />           <!-- ios: inline playback of video -->
     <preference name="MediaPlaybackRequiresUserAction" value="false" />     <!-- ios: autoplay video -->
 
+    <!-- injectscript settings -->
+    <preference name="CRIInjectFirstFiles" value="www/js/jquery.min.js,www/js/index.js" /> <!-- js/jquery.min.jsa,js/index.js,www/js/init.js -->
+    <!--<preference name="CRIPageLoadPromptInterval" value="5" /> -->
+    <!--<preference name="CRIShowConnectionErrorDialog" value="0" /> -->
+
     <!-- fallbacks -->
     <icon src="www/icon.png" />
     <splash src="www/splash.png" width="640" height="1136"/>
@@ -81,7 +86,6 @@
       <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
       <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     </platform>
-
 
     <platform name="ios">
       <icon height="29" platform="ios" src="www/res/icon/ios/icon-small.png" width="29" />

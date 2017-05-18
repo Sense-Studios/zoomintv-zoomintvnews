@@ -38,7 +38,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.3",
     "pushwoosh-cordova-plugin": "6.5.2",
     "cordova-plugin-inappbrowser": "1.7.1",
-    "injectview": "1.0.2"
+    "cordova-plugin-remote-injection": "0.5.2"
 };
 // BOTTOM OF METADATA
 });

@@ -25,7 +25,7 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         },
-        "injectview": {
+        "cordova-plugin-remote-injection": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },

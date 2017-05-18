@@ -27,7 +27,11 @@
 		2973ED981889494B84CED131 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB43995EBA03458DB6091E6E /* CoreLocation.framework */; };
 		17A5CB6CE66C423890D6B2F5 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3870F6952C24561A5519D1F /* libstdc++.dylib */; };
 		03BA861B47C54C2ABED27870 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB65D50CC84E477DB636A2C3 /* libz.dylib */; };
-		225E7A5649D54F219AF11354 /* CDVInjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E58A9E42F434C923BCEB2 /* CDVInjectView.m */; };
+		B08E6B87B27D4009A9345C22 /* CDVRemoteInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = CACC17FFC44B40C393667078 /* CDVRemoteInjection.m */; };
+		67D61F38A4454BCFB8F0BF7C /* CDVRemoteInjectionWebViewBaseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984483E4A254021AB6F03E6 /* CDVRemoteInjectionWebViewBaseDelegate.m */; };
+		93A7765A01A74090AE04E445 /* CDVRemoteInjectionUIWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C51304F1831435BB9A00F70 /* CDVRemoteInjectionUIWebViewDelegate.m */; };
+		9FA18DCB3B9443168D803FEE /* CDVRemoteInjectionWKWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90052576C19A4EB8B62482D6 /* CDVRemoteInjectionWKWebViewDelegate.m */; };
+		87B0902C234542D483F1802B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1815897F4CAB42D8B0D2278C /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +90,15 @@
 		DB43995EBA03458DB6091E6E /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		D3870F6952C24561A5519D1F /* libstdc++.dylib */ = {isa = PBXFileReference; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 		CB65D50CC84E477DB636A2C3 /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
-		211E58A9E42F434C923BCEB2 /* CDVInjectView.m */ = {isa = PBXFileReference; name = "CDVInjectView.m"; path = "injectview/CDVInjectView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		C5988BB86C74490B9489E6C6 /* CDVInjectView.h */ = {isa = PBXFileReference; name = "CDVInjectView.h"; path = "injectview/CDVInjectView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CACC17FFC44B40C393667078 /* CDVRemoteInjection.m */ = {isa = PBXFileReference; name = "CDVRemoteInjection.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjection.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6984483E4A254021AB6F03E6 /* CDVRemoteInjectionWebViewBaseDelegate.m */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWebViewBaseDelegate.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWebViewBaseDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		3C51304F1831435BB9A00F70 /* CDVRemoteInjectionUIWebViewDelegate.m */ = {isa = PBXFileReference; name = "CDVRemoteInjectionUIWebViewDelegate.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionUIWebViewDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		90052576C19A4EB8B62482D6 /* CDVRemoteInjectionWKWebViewDelegate.m */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWKWebViewDelegate.m"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWKWebViewDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		68DEC72BC3B44336AB477787 /* CDVRemoteInjection.h */ = {isa = PBXFileReference; name = "CDVRemoteInjection.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjection.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BC041B07FC8D408A87E324BB /* CDVRemoteInjectionWebViewBaseDelegate.h */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWebViewBaseDelegate.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWebViewBaseDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		98704485BD314C79AE25987E /* CDVRemoteInjectionUIWebViewDelegate.h */ = {isa = PBXFileReference; name = "CDVRemoteInjectionUIWebViewDelegate.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionUIWebViewDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		32F0A9E7F2154C4BAE617B66 /* CDVRemoteInjectionWKWebViewDelegate.h */ = {isa = PBXFileReference; name = "CDVRemoteInjectionWKWebViewDelegate.h"; path = "cordova-plugin-remote-injection/CDVRemoteInjectionWKWebViewDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1815897F4CAB42D8B0D2278C /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +113,7 @@
 				2973ED981889494B84CED131 /* CoreLocation.framework in Frameworks */,
 				17A5CB6CE66C423890D6B2F5 /* libstdc++.dylib in Frameworks */,
 				03BA861B47C54C2ABED27870 /* libz.dylib in Frameworks */,
+				87B0902C234542D483F1802B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +190,7 @@
 				DB43995EBA03458DB6091E6E /* CoreLocation.framework */,
 				D3870F6952C24561A5519D1F /* libstdc++.dylib */,
 				CB65D50CC84E477DB636A2C3 /* libz.dylib */,
+				1815897F4CAB42D8B0D2278C /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,8 +228,14 @@
 				0C0955E4F1B342969CA2A447 /* PushNotification.h */,
 				0B28561B0406404EAC47F012 /* PushNotificationManager.h */,
 				26366D7D4D8043F19E9896C9 /* PWLog.h */,
-				211E58A9E42F434C923BCEB2 /* CDVInjectView.m */,
-				C5988BB86C74490B9489E6C6 /* CDVInjectView.h */,
+				CACC17FFC44B40C393667078 /* CDVRemoteInjection.m */,
+				6984483E4A254021AB6F03E6 /* CDVRemoteInjectionWebViewBaseDelegate.m */,
+				3C51304F1831435BB9A00F70 /* CDVRemoteInjectionUIWebViewDelegate.m */,
+				90052576C19A4EB8B62482D6 /* CDVRemoteInjectionWKWebViewDelegate.m */,
+				68DEC72BC3B44336AB477787 /* CDVRemoteInjection.h */,
+				BC041B07FC8D408A87E324BB /* CDVRemoteInjectionWebViewBaseDelegate.h */,
+				98704485BD314C79AE25987E /* CDVRemoteInjectionUIWebViewDelegate.h */,
+				32F0A9E7F2154C4BAE617B66 /* CDVRemoteInjectionWKWebViewDelegate.h */,
 			);
 			name = Plugins;
 			path = "Zoomin.TV/Plugins";
@@ -334,7 +353,10 @@
 				8B71B501287F4D5489B2AD6D /* CDVViewController+SplashScreen.m in Sources */,
 				D122D0993A60416494413526 /* CDVStatusBar.m in Sources */,
 				6EAD61778F5F4C338386ECD0 /* PushNotification.m in Sources */,
-				225E7A5649D54F219AF11354 /* CDVInjectView.m in Sources */,
+				B08E6B87B27D4009A9345C22 /* CDVRemoteInjection.m in Sources */,
+				67D61F38A4454BCFB8F0BF7C /* CDVRemoteInjectionWebViewBaseDelegate.m in Sources */,
+				93A7765A01A74090AE04E445 /* CDVRemoteInjectionUIWebViewDelegate.m in Sources */,
+				9FA18DCB3B9443168D803FEE /* CDVRemoteInjectionWKWebViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

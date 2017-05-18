@@ -157,6 +157,16 @@
                     ],
                     "application": []
                 }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"RemoteInjection\"><param name=\"android-package\" value=\"com.truckmovers.cordova.RemoteInjectionPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
             }
         }
     },
@@ -179,7 +189,7 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         },
-        "injectview": {
+        "cordova-plugin-remote-injection": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },
@@ -221,6 +231,6 @@
         "cordova-plugin-statusbar": "2.2.3",
         "pushwoosh-cordova-plugin": "6.5.2",
         "cordova-plugin-inappbrowser": "1.7.1",
-        "injectview": "1.0.2"
+        "cordova-plugin-remote-injection": "0.5.2"
     }
 }

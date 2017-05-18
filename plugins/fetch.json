@@ -39,11 +39,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "injectview": {
+    "cordova-plugin-remote-injection": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/sberan/cordova-plugin-injectview.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-remote-injection"
         },
         "is_top_level": true,
         "variables": {}

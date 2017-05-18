@@ -33,7 +33,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"InjectView\"><param name=\"ios-package\" value=\"CDVInjectView\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"RemoteInjection\"><param name=\"ios-package\" value=\"CDVRemoteInjectionPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -106,7 +106,7 @@
             "ANDROID_FOREGROUND_PUSH": "false",
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         },
-        "injectview": {
+        "cordova-plugin-remote-injection": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },
@@ -152,6 +152,6 @@
         "cordova-plugin-statusbar": "2.2.3",
         "cordova-plugin-whitelist": "1.2.2",
         "pushwoosh-cordova-plugin": "6.5.2",
-        "injectview": "1.0.2"
+        "cordova-plugin-remote-injection": "0.5.2"
     }
 }
