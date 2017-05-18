@@ -25,6 +25,7 @@
 
 	  <content src="http://labs.sense-studios.com/zoomintv/index.html" />
     <!-- <content src="http://zoomin.tv/video/?source=ios." /> -->
+    <!-- <content src="index.html" /> -->
 
     <!-- plugins -->
     <plugin name="cordova-plugin-whitelist"       source="npm" />
