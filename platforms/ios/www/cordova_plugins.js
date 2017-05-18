@@ -1,8 +1,8 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
         "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
         "pluginId": "cordova-plugin-inappbrowser",
         "clobbers": [
             "cordova.InAppBrowser.open",
@@ -10,24 +10,24 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
         "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
         "pluginId": "cordova-plugin-splashscreen",
         "clobbers": [
             "navigator.splashscreen"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
         "id": "cordova-plugin-statusbar.statusbar",
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
         "pluginId": "cordova-plugin-statusbar",
         "clobbers": [
             "window.StatusBar"
         ]
     },
     {
-        "file": "plugins/pushwoosh-cordova-plugin/www/PushNotification.js",
         "id": "pushwoosh-cordova-plugin.PushNotification",
+        "file": "plugins/pushwoosh-cordova-plugin/www/PushNotification.js",
         "pluginId": "pushwoosh-cordova-plugin",
         "clobbers": [
             "plugins.pushNotification"
@@ -42,6 +42,6 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.3",
     "cordova-plugin-whitelist": "1.2.2",
     "pushwoosh-cordova-plugin": "6.5.2"
-}
+};
 // BOTTOM OF METADATA
 });
