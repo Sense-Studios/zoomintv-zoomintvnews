@@ -50,7 +50,7 @@
     <preference name="AllowInlineMediaPlayback"   value="true" />           <!-- ios: inline playback of video -->
     <preference name="MediaPlaybackRequiresUserAction" value="false" />     <!-- ios: autoplay video -->
     <preference name="SplashScreen"               value="screen" />         <!-- splash -->
-    <preference name="SplashScreenDelay"          value="3" />              <!-- splash -->
+    <preference name="SplashScreenDelay"          value="3000" />              <!-- splash -->
 
     <!-- fallbacks -->
     <icon src="www/icon.png" />
