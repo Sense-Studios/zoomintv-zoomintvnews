@@ -29,11 +29,8 @@
     <feature name="PushNotification">
         <param name="ios-package" value="PushNotification" />
     </feature>
-    <feature name="PGMultiView">
-        <param name="ios-package" value="PGMultiView" />
-    </feature>
-    <feature name="WizViewManager">
-        <param name="ios-package" value="WizViewManager" />
+    <feature name="InjectView">
+        <param name="ios-package" value="CDVInjectView" />
         <param name="onload" value="true" />
     </feature>
     <gap:config-file parent="CFBundleShortVersionString" platform="ios">
@@ -46,7 +43,7 @@
     <author email="support@zoomin.tv" href="http://zoomin.tv">
         Zoomin.TV
     </author>
-    <content src="index.html" />
+    <content src="http://zoomin.tv/video/?source=ios." />
     <icon src="www/icon.png" />
     <splash height="1136" src="www/splash.png" width="640" />
     <access origin="*" />

@@ -32,30 +32,6 @@ module.exports = [
         "clobbers": [
             "plugins.pushNotification"
         ]
-    },
-    {
-        "id": "phonegap-plugin-multiview.multiview",
-        "file": "plugins/phonegap-plugin-multiview/www/multiview.js",
-        "pluginId": "phonegap-plugin-multiview",
-        "clobbers": [
-            "PGMultiView"
-        ]
-    },
-    {
-        "id": "cordova-plugin-wizviewmanager.WizViewManager",
-        "file": "plugins/cordova-plugin-wizviewmanager/www/wizViewManager.js",
-        "pluginId": "cordova-plugin-wizviewmanager",
-        "clobbers": [
-            "window.wizViewManager"
-        ]
-    },
-    {
-        "id": "cordova-plugin-wizviewmanager.WizViewMessenger",
-        "file": "plugins/cordova-plugin-wizviewmanager/www/wizViewMessenger.js",
-        "pluginId": "cordova-plugin-wizviewmanager",
-        "clobbers": [
-            "window.wizViewMessenger"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -66,8 +42,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.3",
     "cordova-plugin-whitelist": "1.2.2",
     "pushwoosh-cordova-plugin": "6.5.2",
-    "phonegap-plugin-multiview": "0.0.1",
-    "cordova-plugin-wizviewmanager": "1.4.0"
+    "injectview": "1.0.2"
 };
 // BOTTOM OF METADATA
 });

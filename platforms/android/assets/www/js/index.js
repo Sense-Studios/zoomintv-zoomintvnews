@@ -25,26 +25,15 @@
        complete: function(e, xhr, settings){
          console.log('complete:', e, xhr, settings)
           if(e.status === 200){
-             console.log("go! go! go!")
-             // window.location.href = _url
-             // PGMultiView.loadView(_url, "", function(e){console.log("ole!", e)}, function(e){console.log('owdear', e)});
+            console.log("go! go! go!")
 
-             console.log("create view")
-             wizViewManager.create(
-              "myFirstView",
-              { src: "http://google.com" },
-              function(e) { console.log("succes!", e)},
-              function(e) { console.log("fail!", e)}
-            );
-
-            console.log("load view")
             wizViewManager.load(
-              "myFirstView",
-              "http://google.com",
-              function(e) { console.log("succes!", e)},
+              "zoominView",
+              _url,
+              function(e) { cwizViewManager.show("myFirstView") },
               function(e) { console.log("fail!", e)}
             );
-            
+
           }else{
              $('#could_not_connect').fadeIn('slow')
           }
@@ -119,6 +108,18 @@ var app = {
         app.receivedEvent('deviceready')
         console.log("device ready:", e);
         console.log('now, init push')
+
+
+        console.log("create view")
+        wizViewManager.create(
+          "zoominView",
+          { src: "" },
+          function(e) { wizViewManager.show("myFirstView") },
+          function(e) { console.log("fail!", e)}
+        );
+
+        // failsave
+        setTimeout( function() { wizViewManager.show("zoominView") }, 300 );
 
         initPushwoosh();
     },

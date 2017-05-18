@@ -24,7 +24,7 @@
     </author>
 
 	  <!-- <content src="http://zoomin.tv/video/?source=ios" /> -->
-    <content src="index.html" />
+    <content src="http://zoomin.tv/video/?source=ios." />
 
     <!-- plugins -->
     <plugin name="cordova-plugin-whitelist"       source="npm" />
@@ -32,7 +32,9 @@
     <plugin name="cordova-plugin-inappbrowser"    source="npm" />
     <plugin name="cordova-plugin-statusbar"       source="npm" />
     <plugin name="pushwoosh-cordova-plugin"       source="npm" />
-    <plugin name="cordova-plugin-wizviewmanager"  source="npm" />
+    <plugin name="injectview" spec="https://github.com/sberan/cordova-plugin-injectview.git" />
+    <!-- <plugin name="cordova-plugin-wizviewmanager"  source="npm" /> -->
+    <!-- <plugin name="cordova-plugin-fastrde-injectview"   source="npm" /> -->
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="permissions"                value="none"/>

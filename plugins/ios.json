@@ -25,10 +25,7 @@
             "ANDROID_FOREGROUND_PUSH": "false",
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         },
-        "phonegap-plugin-multiview": {
-            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
-        },
-        "cordova-plugin-wizviewmanager": {
+        "injectview": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },

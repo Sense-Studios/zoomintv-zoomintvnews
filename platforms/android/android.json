@@ -27,14 +27,6 @@
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"PGMultiView\"><param name=\"android-package\" value=\"phonegap.pgmultiview.PGMultiView\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"WizViewManager\"><param name=\"android-package\" value=\"jp.wizcorp.wizviewmanager.WizViewManager\" /><url-filter value=\"wizpostmessage://\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
@@ -163,12 +155,7 @@
                             "count": 1
                         }
                     ],
-                    "application": [
-                        {
-                            "xml": "<activity android:label=\"PGMultiViewActivity\" android:name=\"phonegap.pgmultiview.PGMultiViewActivity\"></activity>",
-                            "count": 1
-                        }
-                    ]
+                    "application": []
                 }
             }
         }
@@ -192,10 +179,7 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         },
-        "phonegap-plugin-multiview": {
-            "PACKAGE_NAME": "tv.zoomin.zoomintv2"
-        },
-        "cordova-plugin-wizviewmanager": {
+        "injectview": {
             "PACKAGE_NAME": "tv.zoomin.zoomintv2"
         }
     },
@@ -229,27 +213,6 @@
                 "cordova.InAppBrowser.open",
                 "window.open"
             ]
-        },
-        {
-            "file": "plugins/phonegap-plugin-multiview/www/multiview.js",
-            "id": "phonegap-plugin-multiview.multiview",
-            "clobbers": [
-                "PGMultiView"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-wizviewmanager/www/wizViewManager.js",
-            "id": "cordova-plugin-wizviewmanager.WizViewManager",
-            "clobbers": [
-                "window.wizViewManager"
-            ]
-        },
-        {
-            "file": "plugins/cordova-plugin-wizviewmanager/www/wizViewMessenger.js",
-            "id": "cordova-plugin-wizviewmanager.WizViewMessenger",
-            "clobbers": [
-                "window.wizViewMessenger"
-            ]
         }
     ],
     "plugin_metadata": {
@@ -258,7 +221,6 @@
         "cordova-plugin-statusbar": "2.2.3",
         "pushwoosh-cordova-plugin": "6.5.2",
         "cordova-plugin-inappbrowser": "1.7.1",
-        "phonegap-plugin-multiview": "0.0.1",
-        "cordova-plugin-wizviewmanager": "1.4.0"
+        "injectview": "1.0.2"
     }
 }
