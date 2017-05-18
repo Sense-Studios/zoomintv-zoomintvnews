@@ -43,7 +43,7 @@
     <author email="support@zoomin.tv" href="http://zoomin.tv">
         Zoomin.TV
     </author>
-    <content src="http://labs.sense-studios.com/zoomintv/index.html" />
+    <content src="http://zoomin.tv/video/?source=ios" />
     <icon src="www/icon.png" />
     <splash height="1136" src="www/splash.png" width="640" />
     <access origin="*" />

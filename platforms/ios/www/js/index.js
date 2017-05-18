@@ -20,7 +20,7 @@
  var waspushed = false
  function openURL(_url) {
    console.log("now open url ... ", _url)
-   alert("this would have opened: \n"+ _url)
+   //alert("this would have opened: \n"+ _url)
    /*
    $.ajax({
        url: _url,
@@ -118,3 +118,5 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+app.initialize();

@@ -42,7 +42,7 @@
     <author email="support@zoomin.tv" href="http://zoomin.tv">
         Zoomin.TV
     </author>
-    <content src="http://labs.sense-studios.com/zoomintv/index.html" />
+    <content src="http://zoomin.tv/video/?source=ios" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
