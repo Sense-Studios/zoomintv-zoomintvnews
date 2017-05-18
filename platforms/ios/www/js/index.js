@@ -75,7 +75,7 @@
  }
 
 
-var app = {
+var container_app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -100,7 +100,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function(e) {
-        app.receivedEvent('deviceready')
+        container_app.receivedEvent('deviceready')
         console.log("device ready:", e);
         console.log('now, init push')
         initPushwoosh();
@@ -119,4 +119,5 @@ var app = {
     }
 };
 
-app.initialize();
+if (window.name != "_initialized") container_app.initialize();
+window.name = "_initialized";
