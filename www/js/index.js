@@ -19,6 +19,9 @@
 
  var waspushed = false
  function openURL(_url) {
+   console.log("now open url ... ", _url)
+   alert("this would have opened: \n"+ _url)
+   /*
    $.ajax({
        url: _url,
        type: 'GET',
@@ -26,23 +29,15 @@
          console.log('complete:', e, xhr, settings)
           if(e.status === 200){
             console.log("go! go! go!")
-
-            wizViewManager.load(
-              "zoominView",
-              _url,
-              function(e) { cwizViewManager.show("myFirstView") },
-              function(e) { console.log("fail!", e)}
-            );
-
-          }else{
-             $('#could_not_connect').fadeIn('slow')
+            alert("go: ", _url )
           }
        }
    });
+   */
  }
 
  function initPushwoosh() {
-   console.log("init puusssh!")
+   console.log("start init push!")
    var pushwoosh = cordova.require("pushwoosh-cordova-plugin.PushNotification");
 
    // Should be called before pushwoosh.onDeviceReady
@@ -108,19 +103,6 @@ var app = {
         app.receivedEvent('deviceready')
         console.log("device ready:", e);
         console.log('now, init push')
-
-
-        console.log("create view")
-        wizViewManager.create(
-          "zoominView",
-          { src: "" },
-          function(e) { wizViewManager.show("myFirstView") },
-          function(e) { console.log("fail!", e)}
-        );
-
-        // failsave
-        setTimeout( function() { wizViewManager.show("zoominView") }, 300 );
-
         initPushwoosh();
     },
 
