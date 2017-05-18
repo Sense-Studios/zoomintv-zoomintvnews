@@ -47,8 +47,8 @@
      console.log("has notification", event)
      console.log("has hash", event.notification.userdata.hash)
      waspushed = true
-     var url = "http://zoomin.tv/video/?source=ios#" + event.notification.userdata.hash
-     openURL( url )
+     //var url = "http://zoomin.tv/video/?source=ios#" + event.notification.userdata.hash
+     window.location.hash = "#" + event.notification.userdata.hash
    });
 
    // Initialize Pushwoosh. This will trigger all pending push notifications on start.
